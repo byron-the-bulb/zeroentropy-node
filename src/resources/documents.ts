@@ -156,6 +156,11 @@ export namespace DocumentGetInfoResponse {
     path: string;
 
     /**
+     * URL to access the document directly. This URL includes an access token and is valid for a limited time.
+     */
+    file_url?: string;
+
+    /**
      * This will be `null`, unless `include_content` was available and set to `true`.
      */
     content?: string | null;
